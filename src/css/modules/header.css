@@ -1,0 +1,52 @@
+.header {
+  padding: 16px 16px;
+  background-color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh; 
+  }
+
+  /*Nav-links handles the layout of the header navigation words*/
+  .nav-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  
+  }
+
+  /*Nave style handles the styling of the navigation links*/
+  .navStyle{
+    color: black;
+  }
+  
+  .header.light {
+    background-color: white;
+  }
+  
+  .header.dark {
+    background-color: #252525;
+  }
+  
+  .header img {
+    max-width: 120px;
+    height: auto;
+    vertical-align: -webkit-baseline-middle;
+  }
+  
+  
+  
+  @media only screen and (min-width: 660px) {
+    .header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav-links{
+      width: 40%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+    }
+  }
+  
