@@ -1,15 +1,13 @@
 .header {
-  padding: 16px 16px;
+  padding: 16px 16px 16px 16px;
   background-color:whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 10vh; 
+  min-height: 10vh; 
+  align-items: center;
   }
 
   /*Nav-links handles the layout of the header navigation words*/
   .nav-links{
-    width: 40%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -34,7 +32,6 @@
     height: auto;
     vertical-align: -webkit-baseline-middle;
   }
-  
   
   
   @media only screen and (min-width: 660px) {

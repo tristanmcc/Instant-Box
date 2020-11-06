@@ -1,3 +1,4 @@
+// Reacr core
 import React from 'react'
 
 
@@ -6,19 +7,20 @@ import PackageCard from "../molecules/PackageCard";
 import Header from "../organism/Header";
 import Footer from "../organism/Footer";
 
-//CSS
 
-
-
-
-export default function HomePage() {
+export default function HomePage({ items }) {
+    // Sub components
+    const Packages = items.map((item) => {
+        return <PackageCard key={item.id} data={item}/>
+    });
+    
     return (
+        
         <div className="homePage">
            <Header/> 
-           <PackageCard/>
-           <PackageCard/>
-           <PackageCard/>
-           <PackageCard/>
+           <section>
+           <div className="grid">{Packages}</div>
+           </section>
            <Footer/>
         </div>
     )
