@@ -21,7 +21,10 @@ export default function Header() {
         <li>Home</li>
         </Link>
         <Link className= "navStyle" to= "/Search">
-        <li>Packages</li>
+        <li>Search</li>
+        </Link>
+        <Link className= "navStyle" to= "/Package">
+        <li>Package</li>
         </Link>
       </ul>
 

@@ -7,6 +7,8 @@ import PackageCard from "../molecules/PackageCard";
 import Header from "../organism/Header";
 import Footer from "../organism/Footer";
 
+import css from "../../css/templates/homePage.css"
+
 
 export default function HomePage({ items }) {
     // Sub components
@@ -18,7 +20,8 @@ export default function HomePage({ items }) {
         
         <div className="homePage">
            <Header/> 
-           <section>
+           <section className="border">
+               <h1 className="section-heading">Packages for recipient: Jhon Doe</h1>
            <div className="grid">{Packages}</div>
            </section>
            <Footer/>

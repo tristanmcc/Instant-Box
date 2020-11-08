@@ -29,7 +29,9 @@ export default function PackageCard({ data }) {
 
   return (
     <article className="card">
-        <h3 className="status">{status}</h3>
+        <p className="status">From: {sender}</p>
+        <p>status: {status}</p>
+  <p>location ID: {location_id}</p>
     </article>
   );
 }

@@ -12,7 +12,6 @@ export default function SearchPage() {
     <div className="search-page">
       <Header />
       <h1>Search results will go here</h1>
-      <PackageCard/>
       <Footer/>
     </div>
   );

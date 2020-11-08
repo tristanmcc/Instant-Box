@@ -6,6 +6,7 @@ import {useState, useEffect} from "react";
 /// Components
 import Home from './components/template/HomePage';
 import Search from './components/template/SearchPage';
+import PackagePage from './components/template/PackagePage';
 
 function App() {
 
@@ -14,8 +15,7 @@ function App() {
   },[]);
 
   const [items, setItems] = useState([]);
-
-
+  
   const fetchItems = async () => {
   const data = await fetch("https://my.api.mockaroo.com/orders.json?key=e49e6840");
   const items = await data.json();
@@ -30,9 +30,14 @@ function App() {
             items={items}/>
       <Route path="/Search" component={Search}/>
       </Switch>
+      <Switch>
+      <Route path="/Package" render={() => <PackagePage items={items}/>}
+              items={items} />      
+      </Switch>   
     </div>
-    </Router>
+    </Router> 
   );
 }
+
 
 export default App;

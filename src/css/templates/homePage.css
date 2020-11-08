@@ -1,4 +1,67 @@
+.homePage {
+    height: 100%;
+    background-color: whitesmoke;
+  }
 
+  .block{
+    
+  }
+  
+
+
+.section-heading{
+    margin-top: 0%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: whitesmoke;
+    text-align: center;
+    background-color:#009EE8;
+}
+
+.grid{
+    padding: 2%;
+}
+ 
+@media (max-width: 350px){
+   .section-heading{
+    padding: 1%;
+    padding-top: 5px;
+
+   }
+}
+
+
+  /* YouTube breakpoints */
+  @media (min-width: 500px) {
+    .homePage .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 16px;
+    }
+  }
+  
+  
+  
+  @media only screen and (min-width: 900px) {
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 16px;
+    }
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .homePage .grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 16px;
+    }
+  }
+  
+  @media only screen and (min-width: 1366px) {
+    .home-page .grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 12px;
+    }
+  }
  
   
 
