@@ -9,13 +9,17 @@ import Search from "./components/template/SearchPage";
 import PackagePage from "./components/template/PackageDetails";
 import Home from "./components/template/HomePage";
 
+
 function App() {
+  
+  //Function used in implementation of 'fetch' call from API
   useEffect(() => {
     fetchItems();
   }, []);
 
   const [items, setItems] = useState([]);
 
+  //Sub-components
   const fetchItems = async () => {
     const data = await fetch(
       "https://my.api.mockaroo.com/orders.json?key=e49e6840"
@@ -24,10 +28,13 @@ function App() {
     setItems(items);
   };
 
+
   return (
     <Router>
       <div className="App">
         <Switch>
+          
+          {/*React router dom Route paths*/}
           <Route path="/" exact component={Home} />
           <Route
             path="/Packages"
