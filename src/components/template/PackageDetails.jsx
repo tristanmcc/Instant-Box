@@ -33,12 +33,8 @@ export default function PackageDetails({ items }) {
             user_name,
             last_updated,
           } = shipment;
-
-
-    console.log(packageId);
-    console.log(shipment);
     
-
+          
     return (
         <article className = "package-page">
             <Header/>

@@ -13,19 +13,19 @@ import data from './db.json';
 
 function App() {
 
-/*   useEffect(() => {
+useEffect(() => {
     fetchItems();
   },[]);
 
-  const [items, setItems] = useState([]); */
+  const [items, setItems] = useState([]); 
   
-  /* const fetchItems = async () => {
+  const fetchItems = async () => {
   const data = await fetch("https://my.api.mockaroo.com/orders.json?key=e49e6840");
   const items = await data.json();
   setItems(items);
-} */
+} 
 
-const items = data;
+//const items = data;
 
   return (
     <Router>
@@ -34,7 +34,7 @@ const items = data;
         <Route path="/" exact component={Home}/>
         <Route path="/Packages" render={() => <Packages items={items} />}
             items={items}/>
-      <Route path="/Search" component={Search}/>
+      <Route path="/Search" render={() => <Search />}/>
       <Route path="/Package/:packageId" render={() => <PackagePage items={items} />}
             items ={items}/>
       </Switch>
