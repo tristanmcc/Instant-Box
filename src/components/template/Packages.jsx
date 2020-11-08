@@ -11,6 +11,7 @@ import Footer from "../organism/Footer";
 import css from "../../css/templates/Packages.css";
 
 export default function Packages({ items }) {
+
   // Sub components
   const Packages = items.map((item) => {
     return <PackageCard key={item.id} data={item} />;
@@ -20,7 +21,7 @@ export default function Packages({ items }) {
     <div className="packages">
       <Header />
       <section className="border">
-        <h1 className="section-heading">Packages for recipient: Jhon Doe</h1>
+        <h1 className="section-heading">Packages for recipient: John Doe</h1>
         <div className="grid">{Packages}</div>
       </section>
       <Footer />

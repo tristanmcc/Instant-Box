@@ -1,13 +1,11 @@
 // React core
 import React from "react";
-import { Link } from "react-router-dom";
 
 // Media assets
-import logo from "../../assets/Package_logo.png";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 
 //CSS
-import footer from "../../css/modules/footer.css";
+import css from "../../css/modules/footer.css";
 
 export default function Footer() {
   <script
@@ -19,6 +17,8 @@ export default function Footer() {
   return (
     <body className="Site">
       <footer>
+        
+        {/*Social media anchored links*/}
         <div className="socials">
           <span>
             <a className="navStyle" href="http://instagram.com" target="_blank">

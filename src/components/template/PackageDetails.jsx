@@ -40,6 +40,8 @@ export default function PackageDetails({ items }) {
         <a href="#">
           <img className="image" src={Parcel} alt="Package graphic" />
         </a>
+
+        {/* ALl details pertaining to each parcel in array called from API*/}
         <ul className="details">
           <li>
             {" "}

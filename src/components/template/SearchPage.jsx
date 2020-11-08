@@ -10,14 +10,15 @@ import Footer from "../organism/Footer";
 import css from "../../css/templates/searchPage.css";
 
 export default function SearchPage() {
+  
+  //sub-components
   const [query, setQuery] = useState("");
-  //console.log(query)
-
+  
   return (
     <div className="search-page">
       <Header />
-
       <h1 className="title">Search</h1>
+      {/* Search function implemented below passing user query into link to navigate to parcel details page */}
       <h3 className="search-title">
         Search for your package with the parcel ID here:
       </h3>

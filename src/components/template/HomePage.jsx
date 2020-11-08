@@ -13,10 +13,15 @@ import locker from "../../assets/locker-graphic.png";
 import css from "../../css/templates/homePage.css";
 
 export default function HomePage() {
+  
   return (
     <div className="site">
       <Header />
+
+      {/*Banner title for home page*/}
       <h1 className="title">Home</h1>
+
+      {/* Home page content - no links */}
       <div className="homePage">
         <h2 className="intro">What is Instant Box?</h2>
         <div className="content">

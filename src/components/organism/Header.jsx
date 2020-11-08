@@ -18,6 +18,8 @@ export default function Header() {
           <img src={logo} alt="Logo" />
         </a>
       </h1>
+      
+      {/* Navigation links in header to switch between pages using react router dom */}
       <ul className="nav-links">
         <Link className="navStyle" to="/">
           <li>Home</li>
