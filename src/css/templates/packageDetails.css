@@ -1,0 +1,47 @@
+.package-page{
+    display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  
+}
+
+.site-content{
+    flex: 1;
+    align-items: center;
+}
+
+.image{
+    
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+.details{
+    list-style: none;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+@media(min-width:500px){
+.details {
+    text-align: center;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style: none;
+    align-items: center;
+  }
+}
+
+@media(min-width: 1367px){
+    .image{
+        max-width: 700px;
+    }
+    .details{
+        columns: 1;
+    }
+}

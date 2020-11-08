@@ -12,6 +12,10 @@
     color: whitesmoke;
     text-align: center;
     background-color:#009EE8;
+    border-top: solid;
+    border-color: rgb(2, 27, 56);
+    border-bottom: solid;
+    border-color: rgb(2, 27, 56);
 }
 
 .intro{
@@ -53,5 +57,6 @@ li{
         min-height: 100vh;
         flex-direction: column;
       }
+
 
 

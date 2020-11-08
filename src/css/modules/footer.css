@@ -1,6 +1,6 @@
 .footer {
     padding: 16px 16px;
-    background-color:red;
+    
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -16,6 +16,8 @@
         min-height: 10vh;
         flex-direction: column;
         justify-content: space-around;
+        border-top: solid;
+    border-color: rgb(2, 27, 56);
         
       }
       

@@ -1,0 +1,20 @@
+.search-bar{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.search-title{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.search-page{
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      .site-content{
+        flex: 1;
+      }

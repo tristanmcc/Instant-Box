@@ -6,35 +6,31 @@ import {Link} from 'react-router-dom';
 //CSS
 import card from "../../css/modules/packageCard.css";
 
+//Media
+import Parcel from '../../assets/parcel-Graphics (1).png';
+
+
 
 // Note the curly braces around props, to allow to prepare to break down the object into individual variables
 export default function PackageCard({ data }) {
   const {
-    id,
     status,
-    eta,
     parcel_id,
     sender,
-    verification_required,
-    location_id,
-    location_name,
-    location_coordinate_latitude,
-    location_coordinate_longitude,
-    location_status_ok,
-    user_phone,
-    user_name,
-    notes,
-    last_updated,
   } = data;
   
 
   return (
+    <div className="back-image">
     <article className="card">
-      <Link to ={`/Package/${parcel_id}`}>
-        <p className="status">From: {sender}</p>
-        <p>status: {status}</p>
-  <p>location ID: {location_id}</p>
+      <Link className="link" to ={`/Package/${parcel_id}`}>
+        <img className="image"src={Parcel} alt="Package graphic" />
+        <ul className="short-desc">
+        <li><b>From:</b> {sender}</li>
+        <li><b>Status:</b> {status}</li>
+        </ul>
   </Link>
     </article>
+    </div>
   );
 }

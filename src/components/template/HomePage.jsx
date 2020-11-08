@@ -28,11 +28,11 @@ export default function HomePage() {
           <img className ="locker" src={locker} alt="Lockers" />
       </a>
 <h3 className="intro">How does it work?</h3>
-<ul className="content">
+    <ul className="content">
     <li>1. Select Instant box at the checkout of your favorite store.</li>
     <li>2. We send an SMS with tracking link and PIN code.</li>
     <li>3. You pick up your package with the PIN code, without having to stand in line at the postal agent for a single second.</li>
-</ul>
+    </ul>
     </div>
     <Footer/>
     </div>

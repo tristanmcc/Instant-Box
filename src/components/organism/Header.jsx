@@ -23,15 +23,10 @@ export default function Header() {
         <Link className= "navStyle" to="/Packages">
         <li>All Packages</li>
         </Link>
-        <Link className= "navStyle" to= "/Search">
+       <Link className= "navStyle" to= "/Search">
         <li>Search</li>
         </Link>
       </ul>
-
-      {/*<div className="search-bar">
-        <input placeholder="Search" />
-        <a to="/search-page"><button>Search</button></a>
-  </div>*/}
     </header>
   );
 }

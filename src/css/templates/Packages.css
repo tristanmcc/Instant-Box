@@ -1,14 +1,8 @@
 .packages {
     height: 100%;
     background-color: whitesmoke;
-  }
-
-  .block{
     
   }
-  
-
-
 .section-heading{
     margin-top: 0%;
     padding-top: 25px;
@@ -16,6 +10,10 @@
     color: whitesmoke;
     text-align: center;
     background-color:#009EE8;
+    border-top: solid;
+    border-color: rgb(2, 27, 56);
+    border-bottom: solid;
+    border-color: rgb(2, 27, 56);
 }
 
 .grid{
@@ -40,24 +38,16 @@
     }
   }
   
-  
-  
-  @media only screen and (min-width: 900px) {
-    .grid {
+  @media (min-width: 900px) {
+    .packages .grid {
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 16px;
     }
   }
   
-  @media only screen and (min-width: 1000px) {
-    .homePage .grid {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 16px;
-    }
-  }
   
   @media only screen and (min-width: 1366px) {
-    .home-page .grid {
+    .packages .grid {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-column-gap: 12px;
     }

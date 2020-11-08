@@ -29,12 +29,8 @@ export default function PackageDetails({ items }) {
             verification_required,
             location_id,
             location_name,
-            location_coordinate_latitude,
-            location_coordinate_longitude,
-            location_status_ok,
             user_phone,
             user_name,
-            notes,
             last_updated,
           } = shipment;
 
@@ -46,16 +42,24 @@ export default function PackageDetails({ items }) {
     return (
         <article className = "package-page">
             <Header/>
-
-            <div>
+            <h1 className = "title">Package: {parcel_id}</h1>
+            <div className="site-content">
                 <a href = "#">
-                    <img src={Parcel} alt="Package graphic" />
+                    <img className="image"src={Parcel} alt="Package graphic" />
                 </a>
-                <p> show me the money{id,
-            status}
-                </p>
+                <ul className="details">
+                <li> <b>Status:</b> {status}</li>
+                <li> <b>ETA:</b> {eta}</li>
+                <li><b>Sender:</b> {sender}</li>
+                <li> <b>Verification required:</b> {verification_required}</li>
+                <li> <b>Location ID:</b> {location_id}</li>
+                <li><b> Location Name:</b> {location_name}</li>
+                <li><b> Recipient phone number:</b> {user_phone}</li>
+                <li><b> Notes:</b> {location_id}</li>
+                <li><b> Recipient Name:</b> {user_name}</li>
+                <li><b> Last Updated:</b> {last_updated}</li>
+                </ul>
             </div>
-            
             <Footer/>
         </article>
     )

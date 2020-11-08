@@ -1,24 +1,33 @@
 .card {
-
-    padding-left: 5%;
+    padding: 5%;
     border-radius: 5px;
-    margin: 20px;
+    margin: 50px;
     margin-left: 50px;
     margin-right: 50px;
     cursor: default;
-    background-color: green;
+    background-color: #009EE8;
+    border: solid;
+    border-color: rgb(2, 27, 56);
+  }
+
+  .short-desc{
+    list-style: none;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+  }
+
+  .link{
+    text-decoration: none;
+    color: rgb(2, 27, 56);
   }
   
-  @media only screen and (min-width: 900px) {
-    .card .meta-data {
-      padding: 0;
-    }
+@media(min-width:500px){
+  .short-desc{
+    columns: 1;
+    list-style: none;
+    text-align: center;
   }
-
-  @media (min-width: 550px) {
-    .card{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
 }
-
+ 
