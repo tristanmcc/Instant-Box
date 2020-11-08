@@ -17,14 +17,14 @@ export default function Header() {
         <img src={logo} alt="Logo" />
       </a></h1>
       <ul className ="nav-links">
-        <Link className= "navStyle" to="/">
+      <Link className= "navStyle" to= "/">
         <li>Home</li>
+        </Link>
+        <Link className= "navStyle" to="/Packages">
+        <li>All Packages</li>
         </Link>
         <Link className= "navStyle" to= "/Search">
         <li>Search</li>
-        </Link>
-        <Link className= "navStyle" to= "/Package">
-        <li>Package</li>
         </Link>
       </ul>
 

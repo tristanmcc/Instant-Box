@@ -1,6 +1,7 @@
 // React core
 import React from "react";
 import {useState, useEffect} from "react"
+import {Link} from 'react-router-dom';
 
 //CSS
 import card from "../../css/modules/packageCard.css";
@@ -29,9 +30,11 @@ export default function PackageCard({ data }) {
 
   return (
     <article className="card">
+      <Link to ={`/Package/${parcel_id}`}>
         <p className="status">From: {sender}</p>
         <p>status: {status}</p>
   <p>location ID: {location_id}</p>
+  </Link>
     </article>
   );
 }

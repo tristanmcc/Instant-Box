@@ -1,15 +1,11 @@
-.homePage {
-    height: 100%;
-    background-color: whitesmoke;
-  }
+.homePage{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0%;
+    flex: 1;
+}
 
-  .block{
-    
-  }
-  
-
-
-.section-heading{
+.title {
     margin-top: 0%;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -18,52 +14,44 @@
     background-color:#009EE8;
 }
 
-.grid{
-    padding: 2%;
+.intro{
+    margin: 2%;
+    text-align: center;
 }
- 
-@media (max-width: 350px){
-   .section-heading{
-    padding: 1%;
-    padding-top: 5px;
-
-   }
+.content{
+    text-align: center;
+    list-style: none;
 }
 
+li{
+    margin: 1em 0;
+}
 
-  /* YouTube breakpoints */
-  @media (min-width: 500px) {
-    .homePage .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 16px;
-    }
-  }
-  
-  
-  
-  @media only screen and (min-width: 900px) {
-    .grid {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 16px;
-    }
-  }
-  
-  @media only screen and (min-width: 1000px) {
-    .homePage .grid {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 16px;
-    }
-  }
-  
-  @media only screen and (min-width: 1366px) {
-    .home-page .grid {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-column-gap: 12px;
-    }
-  }
- 
-  
+.logo{
+    width: 200px;
+    height: 100px;
+}
+.locker{
+    width: 100px;
+    height: 100px;
+}
 
-  
-  
+.images{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width: 500px){
+    .images{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.site{
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+
