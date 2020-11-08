@@ -1,37 +1,57 @@
-.footer {
-    padding: 16px 16px;
-    
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      min-height: 10vh; 
-      vertical-align: -webkit-baseline-middle;
-      grid-template-columns: 1fr 1fr; /* each fr is a equal space column. */
-      grid-column-gap: 16px;
-    }
-  
-    .Site {
-        background-color:#009EE8;
-        display: flex;
-        min-height: 10vh;
-        flex-direction: column;
-        justify-content: space-around;
-        border-top: solid;
-    border-color: rgb(2, 27, 56);
-        
-      }
-      
-      .Site-content {
-        flex: 1;
-        background-color: aquamarine;
-      }
-  
-   
 
-   
-    @media only screen and (min-width: 660px) {
-      .header {
-        grid-template-columns: 1fr 1fr 1fr; /* each fr is a equal space column. */
-      
-      }}
-    
+.footer {
+  align-items: center;
+  display: flex;
+  grid-column-gap: 16px;
+  grid-template-columns: 1fr 1fr; 
+  justify-content: space-around;
+  min-height: 10vh; 
+  padding: 16px 16px;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.Site {
+  background-color:#009EE8;
+  border-top: solid;
+  border-color: rgb(2, 27, 56);  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 10vh;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+.socials{
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.socials :hover {
+  text-decoration: none;
+}
+
+.socials :visited { 
+  color:whitesmoke; 
+  text-decoration: none; 
+}
+
+.socials :focus { 
+  color:whitesmoke; 
+  text-decoration: none; 
+}
+
+.socials :active { 
+  color:whitesmoke; 
+  text-decoration: none; 
+}
+
+@media only screen and (min-width: 660px) {
+.header {
+        grid-template-columns: 1fr 1fr 1fr; 
+      }
+    }

@@ -1,6 +1,5 @@
 // Reacr core
-import React from 'react'
-
+import React from "react";
 
 // Components
 import PackageCard from "../molecules/PackageCard";
@@ -11,24 +10,20 @@ import Footer from "../organism/Footer";
 //css
 import css from "../../css/templates/Packages.css";
 
-
 export default function Packages({ items }) {
-    // Sub components
-    const Packages = items.map((item) => {
-        return <PackageCard key={item.id} data={item}/>
-    });
+  // Sub components
+  const Packages = items.map((item) => {
+    return <PackageCard key={item.id} data={item} />;
+  });
 
-    return (
-        
-        <div className="packages">
-           <Header/> 
-           <section className="border">
-               <h1 className="section-heading">Packages for recipient: Jhon Doe</h1>
-           <div className="grid">{Packages}</div>
-           </section>
-           <Footer/>
-        </div>
-    )
+  return (
+    <div className="packages">
+      <Header />
+      <section className="border">
+        <h1 className="section-heading">Packages for recipient: Jhon Doe</h1>
+        <div className="grid">{Packages}</div>
+      </section>
+      <Footer />
+    </div>
+  );
 }
-
-
